@@ -1,0 +1,128 @@
+ion-content {
+  font-family: "Nunito", sans-serif;
+}
+
+.header {
+  background-color: #1d212d;
+  border-radius: 0 0 10px 10px;
+}
+
+.header h1 {
+  color: #09ba86;
+  font-weight: 600;
+  font-size: 2.5rem;
+}
+
+.header p {
+  color: white;
+  font-weight: 400;
+}
+
+.formulario {
+  margin-top: 4.5rem;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  margin: 16px 0;
+}
+
+.custom-ion-label {
+  color: #333;
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+.custom-ion-item {
+  --background: #f0ede2;
+  --border-radius: 16px;
+  --padding-start: 16px;
+  --padding-end: 16px;
+  --padding-top: 8px;
+  --padding-bottom: 8px;
+  border-radius: 16px;
+  margin: 0;
+}
+
+.custom-ion-icon {
+  font-size: 1.5rem;
+}
+
+.custom-ion-input {
+  font-size: 1rem;
+}
+
+.custom-button {
+  --background: #09ba86;
+  --color: #fff;
+  --border-radius: 12px;
+  --box-shadow: none;
+  font-weight: bold;
+  font-family: "Nunito";
+  font-size: large;
+  text-transform: capitalize;
+}
+
+.divider-row {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 16px 0;
+}
+
+.divider-line {
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.274);
+  margin: 0;
+  padding: 0;
+}
+
+.divider-text {
+  text-align: center;
+  font-weight: bold;
+  color: #666;
+}
+
+.divider-text p {
+  margin: 0;
+  padding: 0 8px;
+}
+
+.talkSpeakers {
+  display: flex;
+  gap: 0.6rem;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 2rem;
+}
+
+.talkSpeaker {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3.5rem;
+  width: 3.5rem;
+  border: #09ba86 solid 1.5px;
+  border-radius: 20px;
+  margin-right: 0.2rem;
+}
+
+.talkSpeaker img {
+  height: 1.7rem;
+  width: 1.7rem;
+  filter: brightness(0) saturate(100%) invert(59%) sepia(24%) saturate(5756%)
+    hue-rotate(124deg) brightness(93%) contrast(93%);
+}
+
+ion-router-link {
+  color: #09ba86;
+}
+
+.recover-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
