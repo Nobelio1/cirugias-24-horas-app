@@ -1,0 +1,7 @@
+{
+  "name": "cirugias24horas-app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite"
+}
