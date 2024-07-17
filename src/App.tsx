@@ -27,12 +27,16 @@ import '@ionic/react/css/display.css';
 
 /* import '@ionic/react/css/palettes/dark.always.css'; */
 /* import '@ionic/react/css/palettes/dark.class.css'; */
-import '@ionic/react/css/palettes/dark.system.css';
+// import '@ionic/react/css/palettes/dark.system.css';
 
 /* Theme variables */
 import './theme/variables.css';
 import './theme/satochi.css'
+
+/*Screens*/
 import LoginScreen from './auth/screen/LoginScreen';
+import RegisterPacientScreen from './auth/screen/RegisterPacientScreen';
+import IndexLayout from './core/layout/IndexLayout';
 
 setupIonicReact();
 
@@ -43,6 +47,8 @@ const App: React.FC = () => (
         <Route exact path='/'>
           <LoginScreen/>
         </Route>
+        <Route component={RegisterPacientScreen} path="/register-pacient" exact />
+        <Route component={IndexLayout} path="/app" exact />
       </IonRouterOutlet>
     </IonReactRouter>
   </IonApp>

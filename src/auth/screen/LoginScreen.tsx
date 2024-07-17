@@ -1,11 +1,8 @@
 import {
   IonButton,
-  IonCard,
-  IonCardContent,
   IonCol,
   IonContent,
   IonGrid,
-  IonHeader,
   IonIcon,
   IonInput,
   IonItem,
@@ -13,8 +10,6 @@ import {
   IonPage,
   IonRouterLink,
   IonRow,
-  IonTitle,
-  IonToolbar,
   useIonLoading,
   useIonRouter,
 } from "@ionic/react";
@@ -24,12 +19,10 @@ import Intro from "../../UI/Intro/Intro";
 import {
   arrowForwardOutline,
   lockClosedOutline,
-  logInOutline,
   logoApple,
   logoFacebook,
   logoGoogle,
   mailOpenOutline,
-  personCircleOutline,
 } from "ionicons/icons";
 import "./css/login.css";
 
@@ -53,7 +46,7 @@ const LoginScreen: React.FC = () => {
     await present("Logging in...");
     setTimeout(async () => {
       dismiss();
-      router.push("/app", "root"); //investigar esto
+      router.push("/app", "root");
     }, 2000);
   };
 
@@ -167,9 +160,9 @@ const LoginScreen: React.FC = () => {
               {/* Relacion-Cuenta */}
               <IonRow className="recover-links">
                 <p>¿Aún no tienes cuenta? {""}
-                <IonRouterLink href="/app">Registrarte aqui</IonRouterLink>
+                <IonRouterLink routerLink="/register-pacient">Registrarte aqui</IonRouterLink>
                 </p>
-                <IonRouterLink href="/app">¿Te olvidaste tu contraseña?</IonRouterLink>
+                <IonRouterLink href="/app/home">¿Te olvidaste tu contraseña?</IonRouterLink>
               </IonRow>
             </IonGrid>
           </IonContent>
