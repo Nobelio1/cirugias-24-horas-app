@@ -1,0 +1,61 @@
+.tab4-custom-card {
+  border-radius: 15px;
+  box-shadow: none;
+}
+
+.tab4-custom-card-content {
+  padding: 2.5px;
+}
+
+.tab4-custom-item {
+  border: rgba(128, 128, 128, 0.15) 1.5px solid;
+  --background: transparent;
+  --padding-start: 10px;
+  --padding-end: 10px;
+  --inner-padding-end: 10px;
+  border-radius: 10px;
+}
+
+.tab4-custom-icon-start {
+  color: gray;
+}
+
+.tab4-custom-icon-end {
+  color: gray;
+}
+
+.tab4-custom-label {
+  --font-family: "Nunito", sans-serif;
+  --font-size: 18px !important;
+  color: #424242 !important;
+  font-weight: bold;
+}
+
+.tab4-custom-label p {
+  color: gray !important;
+  font-weight: normal;
+}
+
+/* ----- IA ----- */
+
+.tab4-custom-card-ia {
+  border-radius: 15px;
+  box-shadow: none;
+}
+
+.tab4-custom-card-content-ia {
+  padding: 2.5px;
+}
+
+.tab4-custom-item-ia {
+  --background: #acdc6c;
+  border-radius: 10px;
+}
+
+.tab4-custom-item-ia p {
+  font-size: 15px;
+  text-align: center;
+  padding: 10px 0;
+  font-weight: bold;
+  color: #5a5a5a;
+}

@@ -61,4 +61,6 @@
   --ion-color-dark-contrast-rgb: 255, 255, 255;
   --ion-color-dark-shade: #3a3a3a;
   --ion-color-dark-tint: #555555;
+
+  --ion-font-family: "Nunito", sans-serif;
 }

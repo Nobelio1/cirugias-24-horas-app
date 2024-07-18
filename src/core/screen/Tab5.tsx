@@ -1,5 +1,4 @@
 import {
-  IonAvatar,
   IonCard,
   IonCardContent,
   IonCol,
@@ -7,7 +6,6 @@ import {
   IonGrid,
   IonIcon,
   IonItem,
-  IonLabel,
   IonPage,
   IonRouterLink,
   IonRow,
@@ -24,7 +22,7 @@ import {
   star,
 } from "ionicons/icons";
 
-import '../css/tab5.css'
+import "../css/tab5.css";
 
 const Tab5: React.FC = () => {
   const itemList = [
@@ -76,21 +74,27 @@ const Tab5: React.FC = () => {
         </IonGrid>
 
         {itemList.map((user, index) => (
-          <IonCard key={index}>
-            <IonCardContent className="ion-no-padding">
-              <IonItem lines="none">
-                <IonIcon slot="start" icon={user.icon} />
-                <IonLabel>{user.name}</IonLabel>
-                <IonIcon slot="end" icon={chevronForward} />
+          <IonCard key={index} className="tab5-custom-card">
+            <IonCardContent className="tab5-custom-card-content ion-no-padding">
+              <IonItem lines="none" className="tab5-custom-item">
+                <IonIcon
+                  slot="start"
+                  icon={user.icon}
+                  className="tab5-custom-icon-start"
+                />
+                <p className="tab5-custom-label">{user.name}</p>
+                <IonIcon
+                  slot="end"
+                  icon={chevronForward}
+                  className="tab5-custom-icon-end"
+                />
               </IonItem>
             </IonCardContent>
           </IonCard>
         ))}
 
-        <IonRow className="recover-links">
-          <IonRouterLink routerLink="">
-            Registrarte aqui
-          </IonRouterLink>
+        <IonRow className="tab5-logout ion-margin-bottom">
+          <IonRouterLink routerLink="" >Cerrar Sesión</IonRouterLink>
         </IonRow>
       </IonContent>
     </IonPage>
