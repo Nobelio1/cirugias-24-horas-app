@@ -1,0 +1,31 @@
+ion-content {
+  font-family: "Nunito", sans-serif;
+}
+
+.tab5-avatar img {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  object-fit: fill;
+  border: #09ba852a solid 8px;
+  border-style: outset;
+}
+
+.tab5-avatar {
+  font-family: "Nunito", sans-serif;
+}
+
+.tab5-avatar p {
+  margin: 0;
+}
+
+.tab5-avatar p:nth-child(2) {
+  color: #09ba86;
+  margin-top: 12px;
+  font-size: 24px;
+}
+
+.tab5-avatar p:nth-child(3) {
+  color: gray;
+  font-size: 16px;
+}

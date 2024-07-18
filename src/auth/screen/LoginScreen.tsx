@@ -46,7 +46,7 @@ const LoginScreen: React.FC = () => {
     await present("Logging in...");
     setTimeout(async () => {
       dismiss();
-      router.push("/app", "root");
+      router.push("/app/home", "root");
     }, 2000);
   };
 
@@ -162,7 +162,7 @@ const LoginScreen: React.FC = () => {
                 <p>¿Aún no tienes cuenta? {""}
                 <IonRouterLink routerLink="/register-pacient">Registrarte aqui</IonRouterLink>
                 </p>
-                <IonRouterLink href="/app/home">¿Te olvidaste tu contraseña?</IonRouterLink>
+                <IonRouterLink href="/app">¿Te olvidaste tu contraseña?</IonRouterLink>
               </IonRow>
             </IonGrid>
           </IonContent>

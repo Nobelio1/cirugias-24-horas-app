@@ -48,7 +48,7 @@ const App: React.FC = () => (
           <LoginScreen/>
         </Route>
         <Route component={RegisterPacientScreen} path="/register-pacient" exact />
-        <Route component={IndexLayout} path="/app" exact />
+        <Route component={IndexLayout} path="/app"/>
       </IonRouterOutlet>
     </IonReactRouter>
   </IonApp>

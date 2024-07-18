@@ -15,35 +15,35 @@ const IndexLayout: React.FC = () => {
   const tabs = [
     {
       name: "Home",
-      url: "/home",
+      url: "/app/home",
       activeIcon: home,
       icon: homeOutline,
       component: Tab1
     },
     {
       name: "Appointments",
-      url: "/appointments",
+      url: "/app/appointments",
       activeIcon: calendar,
       icon: calendarOutline,
       component: Tab2
     },
     {
       name: "Add",
-      url: "/add",
+      url: "/app/add",
       activeIcon: addCircle,
       icon: addCircleOutline,
       component: Tab3
     },
     {
       name: "Chats",
-      url: "/chats",
+      url: "/app/chats",
       activeIcon: chatbubbleEllipses,
       icon: chatbubbleEllipsesOutline,
       component: Tab4
     },
     {
       name: "Profile",
-      url: "/profile",
+      url: "/app/profile",
       activeIcon: personCircle,
       icon: personCircleOutline,
       component: Tab5
@@ -67,7 +67,7 @@ const IndexLayout: React.FC = () => {
             })}
 
             <Route exact path="/">
-              <Redirect to="/home" />
+              <Redirect to="/app/home" />
             </Route>
           </IonRouterOutlet>
           <IonTabBar slot="bottom">

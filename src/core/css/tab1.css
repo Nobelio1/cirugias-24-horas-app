@@ -1,0 +1,85 @@
+ion-content {
+  font-family: "Nunito", sans-serif;
+}
+
+.tab1-header {
+  font-family: "Nunito", sans-serif;
+}
+
+.tab1-header h1 {
+  margin: 0;
+  font-weight: bold;
+}
+
+.tab1-header span {
+  color: gray;
+}
+
+.center-vertical {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.tab1-button-notification {
+  background-color: #ebebda; /* color estandar */
+  border-radius: 15px;
+}
+
+ion-searchbar.tab1-searchbar {
+  font-family: "Nunito", sans-serif;
+  --background: #ebebda;
+  --placeholder-color: gray;
+  --icon-color: gray;
+  --color: gray;
+  --clear-button-color: gray;
+  --box-shadow: none;
+  --border-radius: 10px;
+}
+
+.tab1-title-card {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 2px;
+  color: #212121;
+  padding-bottom: 8px;
+}
+
+.tab1-card-option {
+  padding: 1.6rem;
+  color: #424242;
+  border-radius: 22px;
+}
+
+.tab1-card-option img {
+  height: 80px;
+}
+
+.tab1-card-option ion-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tab1-card-option-body p {
+  margin: 0;
+  font-size: 18px;
+  padding-bottom: 2px;
+}
+
+.tab1-card-option-body ion-router-link {
+  color: #212121;
+  font-weight: 600;
+}
+
+.tab1-card-option--doctores {
+  background-color: rgba(251, 149, 24, 0.5);
+}
+
+.tab1-card-option--pacientes {
+  background-color: rgba(9, 186, 133, 0.5);
+}
+
+.tab1-card-option--clinicas {
+  background-color: rgba(135, 207, 235, 0.5);
+}

@@ -1,17 +1,37 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import React from 'react';
+import {
+  IonButton,
+  IonButtons,
+  IonContent,
+  IonGrid,
+  IonHeader,
+  IonIcon,
+  IonPage,
+  IonRow,
+  IonSearchbar,
+  IonTitle,
+  IonToolbar,
+} from "@ionic/react";
+import React from "react";
 
 const Tab2: React.FC = () => {
-
   return (
     <IonPage>
-      <IonHeader>
-        <IonToolbar>
-          <IonTitle>Page Title</IonTitle>
-        </IonToolbar>
-      </IonHeader>
       <IonContent className="ion-padding">
-        UI goes here...
+        <IonGrid>
+          <IonRow>
+            <IonToolbar>
+              <div slot="start" className="tab1-header">
+                <h1>Mis Citas</h1>
+              </div>
+            </IonToolbar>
+          </IonRow>
+          <IonRow className="ion-margin-top">
+            <IonSearchbar
+              className="tab1-searchbar"
+              placeholder="Busca a tu doctor"
+            />
+          </IonRow>
+        </IonGrid>
       </IonContent>
     </IonPage>
   );
