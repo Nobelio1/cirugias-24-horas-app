@@ -1,3 +1,4 @@
+//importacion-react
 import {
   IonContent,
   IonGrid,
@@ -8,13 +9,22 @@ import {
   IonToolbar,
 } from "@ionic/react";
 import React, { useEffect, useState } from "react";
-import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { FreeMode, Pagination } from "swiper/modules";
+
+//interfaces
 import {
   ListSpecialties,
   ListSpecialtiesOut,
 } from "../../interface/specialties.interface";
+
+//servicios
 import { getListSpecialties } from "../services/specialties";
+
+//estilos
 import "swiper/css";
+import "swiper/css/free-mode";
+import "swiper/css/pagination";
 import "../css/tab3.css";
 
 const Tab3: React.FC = () => {
@@ -50,41 +60,23 @@ const Tab3: React.FC = () => {
         <IonGrid>
           <IonRow>
             <IonTitle>Elige tu Especialidad</IonTitle>
-            
-            
 
-            <Swiper>
-              <SwiperSlide>
-                <img src="" alt="Intro 1" />
-                <IonText>
-                  <h3>¡Hola! Bienvenido a Cirugías 24 horas</h3>
-                  <p>
-                    Una app donde podras reservar tus citas, gestionar
-                    documentos, chatear con los doctores y muchos más
-                  </p>
-                </IonText>
-              </SwiperSlide>
-
-              <SwiperSlide>
-                <img src="" alt="Intro 2" />
-                <IonText>
-                  <h3>
-                    Prueba nuestra IA especializada para resolver tus
-                    necesidades
-                  </h3>
-                  <p>
-                    Nuestra nueva IA entrenda para resolver tus dudas y
-                    registrate citas con los mejores dotores
-                  </p>
-                </IonText>
-              </SwiperSlide>
-
-              <SwiperSlide>
-                <img src="" alt="Intro 3" />
-                <IonText>
-                  <h3>Enjoy learning to code!</h3>
-                </IonText>
-              </SwiperSlide>
+            <Swiper
+              slidesPerView={3}
+              spaceBetween={30}
+              freeMode={true}
+              modules={[FreeMode]}
+              className="tab3-swiper"
+            >
+              {
+                specialties?.map((data,index)=> (
+                  <SwiperSlide key={index} className="tab3-swiper-slide">
+                    <img src={data.imagen_url} alt="data" />
+                    <p>{data.nombre.toLocaleLowerCase()}</p>
+                  </SwiperSlide>
+                ))
+              }
+              
             </Swiper>
           </IonRow>
         </IonGrid>
